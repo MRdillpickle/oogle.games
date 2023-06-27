@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Oogle Games</title>
+</head>
+
+<body>
+    <dialog id="d">
+        <form method="dialog">
+            <input type="submit" value="close">
+        </form>
+    </dialog>
+
+    <marquee class="banner" direction="right">Oogle Games</marquee>
+    <menu id="menu">
+        <div onclick="openGAME('https://play.gamepix.com/mini-subway/embed');" class="menuButon">My picks</div>
+        <div onclick="d.show();" class="menuButon">My picks</div>
+    </menu>
+    <div class="card">
+        <h6>All Games</h6>
+        <span title="Mini Metro" class="gameCard" onclick="openGAME('https://play.gamepix.com/mini-subway/embed')">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Mini_Metro_header.png">
+        </span>
+
+        <span title="Platfoban" class="gameCard" onclick="openGAME('https://html5.gamedistribution.com/81dc94b32b214b959371a090ff6312e7/?gd_sdk_referrer_url=https://www.cokogames.com/platfoban-sokoban-platform-game/play/')">
+            <img src="https://www.gameszap.com/files/img/platfoban-1616163054.jpg">
+        </span>
+
+        <span title="Tallman Run" class="gameCard" onclick="openGAME('https://html5.gamedistribution.com/7980c23fbbae4af6851e01052fce3cce/')">
+            <img src="https://img.gamedistribution.com/7980c23fbbae4af6851e01052fce3cce-512x512.jpeg">
+        </span>
+
+        <span title="tentrix" class="gameCard" onclick="openGAME('https://www.play.gamepix.com/tentrix/embed')">
+            <img src="https://images.crazygames.com/tentrix.png?auto=format%2Ccompress&q=75&cs=strip&w=461&ch=DPR">
+        </span>
+
+        <span title="Geometry Jump" class="gameCard" onclick="openGAME('https://html5.gamedistribution.com/9b634d67ddd6407c95effd409b947a76/')">
+            <img src="https://img.gamedistribution.com/9b634d67ddd6407c95effd409b947a76-512x384.jpeg">
+        </span>
+
+        <span title="Fireboy And Watergirl" class="gameCard" onclick="openGAME('https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75/')">
+            <img src="https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x384.jpeg">
+        </span>
+    </div>
+
+    
+
+    <script src="main.js"></script>
+</body>
+
+</html>
