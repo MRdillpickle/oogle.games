@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Game</title>
+    <link rel="stylesheet" href="games.css">
+</head>
+<body>
+    <menu id="menu">
+        <div onclick="window.location = '/index.html'" class="menuButon">Home</div>
+        <div onclick="openGAME('https://play.gamepix.com/mini-subway/embed?sid=MEK20');" class="menuButon">My picks</div>
+    </menu>
+
+    <div class="content">
+        <h1 id="title">No game</h1>
+        <iframe src="games.js" frameborder="0"></iframe>
+    </div>
+    <script src="games.js"></script>
+    <script>
+        let gamePage = "games.html";
+
+function openGAME(gameURL) {
+    if (gameURL) {
+        window.location = gamePage + "?game=" + gameURL + "#endurl";
+    }
+}
+    </script>
+</body>
+</html>
